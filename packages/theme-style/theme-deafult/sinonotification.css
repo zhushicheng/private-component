@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-notification {
+  width: 338px;
+  padding: 7px 15px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  transition: opacity .3s,transform .3s,right .3s,top .4s;
+  overflow: hidden;
+  right: 16px;
+  background: #fff; }
+
+.sino-notification-group {
+  margin-left: 0; }
+
+.sino-notification-icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border: 4px solid #ffedc1;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  margin-top: -20px; }
+  .sino-notification-icon i {
+    color: #ffc333;
+    margin: 10px auto 0 auto;
+    display: inline-block;
+    font-size: 22px; }
+  .sino-notification-icon i.sino-duigou {
+    margin-top: 5px;
+    font-size: 35px;
+    color: #91c77f; }
+  .sino-notification-icon i.sino-guanbi {
+    margin-top: 12px;
+    font-size: 19px;
+    color: #ff944c; }
+  .sino-notification-icon i.sino-i {
+    margin-top: 11px;
+    font-size: 23px;
+    color: #399ff2; }
+
+.sino-alert-duigou {
+  border-color: #deeed8; }
+
+.sino-alert-unie61a {
+  border-color: #ffd1b2; }
+
+.sino-alert-i {
+  border-color: #c3e2fb; }
+
+.sino-notification-group .sino-notification-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  height: 31px;
+  padding-right: 5px; }
+
+.sino-notification-group .sino-notification-title span {
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  border-bottom: 3px solid #399ff2; }
+
+.sino-notification-group.is-with-icon {
+  margin-left: 55px; }
+
+.sino-notification-group.is-with-icon .sino-notification-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  border-bottom: 0; }
+
+.sino-notification-group.is-with-icon .sino-notification-title span {
+  border-bottom: 0; }
+
+.sino-notification-content {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 0;
+  line-height: 25px;
+  text-align: justify; }
+
+.sino-notification-content span {
+  font-size: 14px;
+  color: #666;
+  line-height: 25px; }
+
+.sino-notification-closeBtn {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  color: #399ff2;
+  font-size: 12px;
+  display: inline-block; }
+
+.sino-notification-group.is-with-icon .sino-notification-content {
+  margin-top: 0; }
+
+/*# sourceMappingURL=sinonotification.css.map */

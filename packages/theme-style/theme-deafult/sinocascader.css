@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-cascader {
+  line-height: normal; }
+
+.sino-cascader-el {
+  position: relative;
+  width: 160px;
+  height: 25px; }
+
+.sino-cascader .sino-input i {
+  position: absolute;
+  right: 2px;
+  line-height: 25px;
+  width: 12px;
+  height: 12px; }
+
+.sino-cascader .sino-input i.sino-cuowu {
+  background: #787878;
+  color: #eaeaea;
+  right: 15px;
+  top: 7px;
+  border-radius: 50%;
+  line-height: 12px;
+  font-size: 15px;
+  width: 12px;
+  height: 12px; }
+
+.sino-cascader .sino-dropdown {
+  width: auto;
+  padding: 0;
+  white-space: nowrap;
+  overflow: visible;
+  box-shadow: 0 0 2px #ccc; }
+
+.sino-cascader-menu {
+  display: inline-block;
+  min-width: 100px;
+  height: 180px;
+  margin: 0;
+  padding: 5px 0 !important;
+  vertical-align: top;
+  list-style: none;
+  border-right: 1px solid #e9eaec;
+  overflow: auto; }
+
+.sino-cascader-menu:last-child {
+  border-right-color: transparent;
+  margin-right: -1px; }
+
+.sino-cascader .sino-cascader-menu-item {
+  margin: 0;
+  line-height: normal;
+  padding: 7px 16px;
+  clear: both;
+  color: #999;
+  font-size: 12px;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  transition: background .2s ease-in-out; }
+
+.sino-cascader-menu .sino-cascader-menu-item {
+  position: relative;
+  padding-right: 24px;
+  transition: all 0.2s ease-in-out; }
+
+.sino-cascader-menu .sino-cascader-menu-item i {
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -6px; }
+
+.sino-cascader-menu .sino-cascader-menu-item-active {
+  background: #f3f3f3;
+  color: #399ff2; }
+
+.sino-cascader .sino-cascader-menu-item-focus, .sino-cascader .sino-cascader-menu-item:hover {
+  background: #f3f3f3; }
+
+.sino-cascader .sino-cascader-menu-item-disabled {
+  color: #ccc; }
+
+.sino-cascader-not-found-tip {
+  padding: 5px 0;
+  text-align: center;
+  color: #ccc;
+  font-size: 14px; }
+
+.sino-select-dropdown-list {
+  max-height: 190px;
+  box-sizing: border-box;
+  overflow: auto; }
+
+.sino-select-item {
+  margin: 0;
+  line-height: normal;
+  padding: 7px 16px;
+  clear: both;
+  color: #666;
+  font-size: 12px;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer; }
+
+.sino-cascader-label {
+  width: 100%;
+  height: 100%;
+  line-height: 32px;
+  padding: 0 7px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/*# sourceMappingURL=sinocascader.css.map */

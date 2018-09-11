@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-badge {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block; }
+
+.sino-badge-content {
+  height: 13px;
+  border-radius: 7px;
+  background: #ffc333;
+  border: 1px solid #f1ab04;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 4px;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 11px; }
+
+.sino-badge-content.is-fixed {
+  position: absolute;
+  top: 0;
+  right: 11px;
+  transform: translateY(-50%) translateX(100%); }
+
+.sino-badge-content.is-dot {
+  width: 6px;
+  height: 6px;
+  background: #ffc333;
+  border: 1px solid #f1ab04;
+  padding: 0;
+  border-radius: 50%; }
+
+.sino-badge-content.is-fixed.is-dot {
+  right: 5px; }
+
+/*# sourceMappingURL=sinobadge.css.map */

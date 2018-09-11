@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.page-bar {
+  margin: 10px 0 0 0;
+  overflow: hidden; }
+
+.pageul li {
+  float: left;
+  min-width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-left: 0;
+  color: #399ff2; }
+
+.iconfont.sino-zuo {
+  font-size: 12px; }
+
+.iconfont.sino-you1 {
+  font-size: 12px; }
+
+.pageul li:first-child {
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  color: #9a9a9a;
+  text-align: center;
+  line-height: 22px;
+  background: #f9f9f9;
+  border-left: 1px solid #ddd; }
+
+.pageul li:last-child {
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  color: #9a9a9a;
+  text-align: center;
+  line-height: 22px;
+  background: #f9f9f9; }
+
+.pageul li.predot {
+  width: 22px;
+  height: 22px;
+  cursor: default;
+  padding: 0;
+  vertical-align: middle;
+  color: #666;
+  border: 1px solid #ddd;
+  border-left: 0; }
+
+.pageul li.nextdot {
+  width: 22px;
+  height: 22px;
+  cursor: default;
+  padding: 0;
+  vertical-align: middle;
+  color: #666;
+  border: 1px solid #ddd;
+  border-left: 0; }
+
+.pageul li.active {
+  border-color: #399ff2;
+  background-color: #399ff2;
+  color: #fff;
+  cursor: default; }
+
+.pageul li.active:hover {
+  color: #fff; }
+
+.pageul li.disabled {
+  color: #ddd; }
+
+.total {
+  float: left;
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-left: 5px;
+  line-height: 22px; }
+
+.total_a {
+  display: inline-block;
+  color: #399ff2; }
+
+.select {
+  float: left;
+  display: inline-block;
+  margin-left: 5px; }
+
+.sel-font {
+  float: left;
+  color: #999;
+  line-height: 22px;
+  font-size: 14px; }
+
+.sel-dotted {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 38px;
+  height: 22px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  background: #FFF; }
+
+.sel-border {
+  float: left;
+  line-height: 24px;
+  width: 20px;
+  height: 22px;
+  overflow: hidden; }
+
+.sel-page {
+  text-align: center;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 3px 0 0;
+  background: 0 0;
+  color: #399ff2;
+  position: absolute;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding-left: 4px; }
+
+.san {
+  float: left;
+  line-height: 20px;
+  margin-left: 4px; }
+
+.iconfont.sino-unie628 {
+  font-size: 12px;
+  color: #f6b412; }
+
+.sel-right {
+  float: right;
+  color: #999;
+  font-size: 14px;
+  line-height: 24px; }
+
+.sino--page-jumper {
+  margin-left: 5px;
+  float: left;
+  color: #999;
+  display: inline-block; }
+
+.sino-pagination__editor {
+  float: left;
+  color: #399ff2;
+  display: inline-block;
+  border: 1px solid #d1dbe5;
+  border-radius: 2px;
+  line-height: 18px;
+  padding: 4px 2px;
+  width: 38px;
+  height: 22px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: border .3s; }
+
+.sino-jumper {
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 4px; }
+
+.sino-jumper-page {
+  float: left;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 4px; }
+
+.sino-page-bar-button {
+  float: left;
+  width: 32px;
+  height: 22px;
+  border: 1px solid #ddd;
+  background: 0 0;
+  margin-left: 5px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  color: #399ff2;
+  border-radius: 1px; }
+
+.isSmallpage.page-bar {
+  height: 19px;
+  vertical-align: middle; }
+
+.isSmallpage .pageul {
+  display: inline-block; }
+
+.isSmallpage .pageul li {
+  float: left;
+  display: inline-block;
+  min-width: 19px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 14px;
+  margin: 0;
+  height: 19px; }
+
+.isSmallpage .pageul li:first-child {
+  background: 0 0;
+  color: #399ff2;
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  text-align: center; }
+
+.isSmallpage .pageul li:last-child {
+  background: 0 0;
+  color: #399ff2;
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  text-align: center; }
+
+.isSmallpage.iconfont.sino-zuoyoujiantouicon-defuben1 {
+  font-size: 14px;
+  color: #399ff2; }
+
+.isSmallpage.iconfont.sino-zuoyoujiantouicon-defuben {
+  font-size: 14px;
+  color: #399ff2; }
+
+.isSmallpage .pageul li.predot {
+  width: 19px;
+  height: 19px;
+  cursor: default;
+  padding: 0;
+  margin-bottom: 1px;
+  font-size: 12px;
+  border: none;
+  vertical-align: middle;
+  color: #666; }
+
+.isSmallpage .pageul li.nextdot {
+  width: 19px;
+  height: 19px;
+  cursor: default;
+  padding: 0;
+  margin-bottom: 1px;
+  font-size: 12px;
+  border: none;
+  vertical-align: middle;
+  color: #666; }
+
+.isSmallpage .pageul li.active {
+  border-color: #399ff2;
+  background-color: #399ff2;
+  color: #fff;
+  cursor: default; }
+
+.isSmallpage .pageul li.active:hover {
+  color: #fff; }
+
+.isSmallpage .pageul li.disabled {
+  color: #ddd; }
+
+.selectPage {
+  margin: 10px 0; }
+
+.sino-page-small {
+  color: #399ff2; }
+
+.banclickl {
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  color: #399ff2; }
+
+.banclickr {
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  color: #399ff2; }
+
+.sino-page-span {
+  margin-left: 4px;
+  color: #666; }
+
+.sino-page-total {
+  height: 12px;
+  float: left;
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 9px;
+  color: #399ff2; }
+
+/*# sourceMappingURL=sinopage.css.map */

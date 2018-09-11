@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-popper .popper__arrow, .sino-popper .popper__arrow::after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.sino-popper .popper__arrow {
+  border-width: 6px;
+  -webkit-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03)); }
+
+.sino-popper .popper__arrow::after {
+  content: " ";
+  border-width: 6px; }
+
+.sino-popper[x-placement^=top] {
+  margin-bottom: 12px; }
+
+.sino-popper[x-placement^=top] .popper__arrow {
+  bottom: -6px;
+  left: 50%;
+  margin-right: 3px;
+  border-top-color: #ebeef5;
+  border-bottom-width: 0; }
+
+.sino-popper[x-placement^=top] .popper__arrow::after {
+  bottom: 1px;
+  margin-left: -6px;
+  border-top-color: #fff;
+  border-bottom-width: 0; }
+
+.sino-popper[x-placement^=bottom] {
+  margin-top: 12px; }
+
+.sino-popper[x-placement^=bottom] .popper__arrow {
+  top: -6px;
+  left: 50%;
+  margin-right: 3px;
+  border-top-width: 0;
+  border-bottom-color: #ebeef5; }
+
+.sino-popper[x-placement^=bottom] .popper__arrow::after {
+  top: 1px;
+  margin-left: -6px;
+  border-top-width: 0;
+  border-bottom-color: #fff; }
+
+.sino-popper[x-placement^=right] {
+  margin-left: 12px; }
+
+.sino-popper[x-placement^=right] .popper__arrow {
+  top: 50%;
+  left: -6px;
+  margin-bottom: 3px;
+  border-right-color: #ebeef5;
+  border-left-width: 0; }
+
+.sino-popper[x-placement^=right] .popper__arrow::after {
+  bottom: -6px;
+  left: 1px;
+  border-right-color: #fff;
+  border-left-width: 0; }
+
+.sino-popper[x-placement^=left] {
+  margin-right: 12px; }
+
+.sino-popper[x-placement^=left] .popper__arrow {
+  top: 50%;
+  right: -6px;
+  margin-bottom: 3px;
+  border-right-width: 0;
+  border-left-color: #ebeef5; }
+
+.sino-popper[x-placement^=left] .popper__arrow::after {
+  right: 1px;
+  bottom: -6px;
+  margin-left: -6px;
+  border-right-width: 0;
+  border-left-color: #fff; }
+
+.sino-popover {
+  position: absolute;
+  background: #fff;
+  min-width: 150px;
+  border-radius: 2px;
+  border: 1px solid #ebeef5;
+  padding: 10px;
+  z-index: 2000;
+  color: #606266;
+  line-height: 1.4;
+  text-align: justify;
+  font-size: 14px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1); }
+
+.sino-popover__title {
+  color: #303133;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 12px; }
+
+.sino-popover:focus, .sino-popover:focus:active, .sino-popover__reference:focus:hover, .sino-popover__reference:focus:not(.focusing) {
+  outline-width: 0; }
+
+.inputTip {
+  min-width: 100px;
+  color: #f60;
+  border: 1px solid #f60;
+  font-size: 12px;
+  padding: 4px 10px;
+  text-align: left;
+  line-height: 24px;
+  border-radius: 2px;
+  max-width: 150px; }
+
+.inputTip[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: #f60; }
+
+.inputTip[x-placement^=top] .popper__arrow {
+  border-top-color: #f60; }
+
+.inputTip[x-placement^=left] .popper__arrow {
+  border-left-color: #f60; }
+
+.inputTip[x-placement^=right] .popper__arrow {
+  border-right-color: #f60; }
+
+.questionTip {
+  min-width: 100px;
+  color: #666;
+  border: 1px solid #78bdf6;
+  font-size: 12px;
+  padding: 4px 10px;
+  text-align: left;
+  line-height: 24px;
+  border-radius: 2px;
+  max-width: 264px; }
+
+.questionTip[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: #78bdf6; }
+
+.questionTip[x-placement^=top] .popper__arrow {
+  border-top-color: #78bdf6; }
+
+.questionTip[x-placement^=left] .popper__arrow {
+  border-left-color: #78bdf6; }
+
+.questionTip[x-placement^=right] {
+  border-right-color: #78bdf6; }
+
+.questionTip[x-placement^=bottom] {
+  margin-top: 8px; }
+
+.questionTip[x-placement^=top] {
+  margin-bottom: 8px; }
+
+.questionTip[x-placement^=left] {
+  margin-right: 8px; }
+
+.questionTip[x-placement^=right] {
+  margin-left: 8px; }
+
+.sino-popover .sino-popover-scrollbar {
+  max-height: 100px;
+  min-height: 40px; }
+
+.sino-popover .sino-scrollbar-bar.is-vertical {
+  right: -2px; }
+
+/*# sourceMappingURL=sinopopover.css.map */

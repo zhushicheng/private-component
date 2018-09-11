@@ -1,0 +1,80 @@
+.sino-form-inline .sino-form-item, .sino-form-inline .sino-form-item-content {
+  display: inline-block;
+  vertical-align: top; }
+
+.sino-form-item-content:after, .sino-form-item:after {
+  clear: both; }
+
+.sino-form-label-left .sino-form-item-label {
+  text-align: left; }
+
+.sino-form-label-top .sino-form-item-label {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  padding: 0 0 10px; }
+
+.sino-form-inline .sino-form-item {
+  margin-right: 10px; }
+
+.sino-form-inline .sino-form-item-label {
+  float: none;
+  display: inline-block; }
+
+.sino-form-inline.sino-form-label-top .sino-form-item-content {
+  display: block; }
+
+.sino-form-item {
+  margin-bottom: 22px; }
+
+.sino-form-item:after, .sino-form-item:before {
+  display: table;
+  content: ""; }
+
+.sino-form-item .sino-form-item {
+  margin-bottom: 0; }
+
+.sino-form-item.is-error .sino-input-group-append .sino-input-inner, .sino-form-item.is-error .sino-input-group-prepend .sino-input-inner, .sino-form-item.is-error .sino-input-inner {
+  border-color: transparent; }
+
+.sino-form-item.is-error .show-box, .sino-form-item.is-error .sino-input-inner, .sino-form-item.is-error .sino-textarea-inner {
+  border-color: #f60; }
+
+.sino-form-item.is-required .sino-form-item-label:before {
+  content: '*';
+  color: #ff6600;
+  margin-right: 4px; }
+
+.sino-form-item-label {
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  padding: 6px 12px 11px 0;
+  box-sizing: border-box; }
+
+.sino-form-item-content {
+  position: relative;
+  display: inline-block;
+  font-size: 14px; }
+
+.sino-form-item-content:after, .sino-form-item-content:before {
+  display: table;
+  content: ""; }
+
+.sino-form-item-error {
+  color: #ff4949;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 0;
+  position: absolute;
+  top: 1px;
+  right: -3px; }
+
+.sino-form-item-error-text {
+  top: 100%;
+  left: 0; }
+
+/*# sourceMappingURL=sinoform.css.map */

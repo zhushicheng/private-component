@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-img {
+  text-align: center;
+  height: 94%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 14px #ccc;
+  position: fixed;
+  top: 2%;
+  right: 20px;
+  z-index: 999;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 40%; }
+
+.sino-img .sino-title {
+  user-select: none;
+  cursor: move; }
+
+.sino-img .sino-title button {
+  float: right;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  height: 100%; }
+
+.sino-img .sino-title .sino-guanbi {
+  color: #399ff2;
+  line-height: 41px;
+  font-size: 16px; }
+
+.sino-img .sino-img-con {
+  max-height: 90%;
+  overflow: auto;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  height: 90%; }
+
+.sino-img .sino-img-con img {
+  height: 100%; }
+
+/*# sourceMappingURL=sinoimg.css.map */

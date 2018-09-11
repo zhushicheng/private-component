@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+/*.sino-ElasticLayer{
+  z-index: 9;
+  background-color: #000;
+  opacity:0.3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}*/
+.sino-dialog-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000 !important;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: alpha(opacity=40); }
+
+.sino-dialog {
+  opacity: 1;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  width: 716px;
+  padding: 7px 15px 0 15px; }
+
+/*.sino-dialog-small {
+  width: 50%;
+}
+.sino-dialog-tiny{
+  width: 30%
+}
+.sino-dialog-large {
+  width: 90%
+}*/
+.sino-dialog-full {
+  width: 100%;
+  top: 0;
+  margin-bottom: 0;
+  height: 100%;
+  overflow: auto; }
+
+.sino-dialog-header {
+  float: left;
+  width: 100%;
+  height: 31px;
+  background: #fff;
+  line-height: 31px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  user-select: none;
+  cursor: move; }
+
+.sino-dialog-title.sino-level-one {
+  border-bottom: 0; }
+
+.sino-dialog-headerbtn {
+  float: right;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -1px; }
+
+.sino-dialog-title {
+  height: 42px;
+  display: inline-block;
+  font-size: 16px; }
+
+.sino-dialog-wrapper .sino-level-one h3 {
+  height: 30px;
+  line-height: 30px;
+  padding-right: 5px; }
+
+.sino-dialog-body {
+  display: inline-block;
+  padding-top: 20px;
+  color: #999;
+  font-size: 14px;
+  width: 100%;
+  max-height: 490px;
+  overflow-y: auto; }
+
+.sino-dialog-button-text {
+  border: none;
+  color: #399ff2;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0; }
+
+.sino-dialog-button {
+  font-size: 16px;
+  color: #399ff2;
+  line-height: 41px; }
+
+.sino-dialog-form {
+  margin-left: 62px;
+  display: block;
+  margin-top: 0;
+  width: 563px; }
+
+.sino-dialog-item {
+  width: 563px;
+  height: 25px;
+  display: inline-block; }
+
+.sino-dialog-L {
+  float: left;
+  width: 230px;
+  height: 25px; }
+
+.sino-dialog-form-item-label {
+  float: left;
+  font-size: 14px;
+  color: #333333;
+  line-height: 25px;
+  box-sizing: border-box; }
+
+.sino-dialog-form-item-labels {
+  display: inline-block;
+  float: right;
+  width: 3px;
+  height: 8px;
+  margin-left: 5px; }
+
+.sino-dialog-form-item-content {
+  display: inline-block;
+  float: right;
+  width: 3px;
+  height: 8px;
+  margin-left: 5px; }
+
+.sino-dialog-form-item-content {
+  float: left;
+  position: relative;
+  font-size: 14px; }
+
+.sino-dialog-input {
+  width: 158px;
+  height: 25px;
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  color: #999; }
+
+input::-webkit-input-placeholder {
+  color: #999; }
+
+.sino-dialog-input-inner {
+  width: 100%;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #eee;
+  background-image: none;
+  border-radius: 1px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  color: #999;
+  display: inline-block;
+  font-size: inherit;
+  outline: none;
+  padding: 4px 5px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.sino-dialog-R {
+  margin-left: 104px;
+  float: left;
+  width: 229px;
+  height: 25px; }
+
+.sino-dialog-select {
+  margin-left: 5px;
+  display: inline-block;
+  width: 158px;
+  height: 25px;
+  background: #eee; }
+
+.sino-dialog-border {
+  width: 156px;
+  height: 23px;
+  border: 1px solid #e4e4e4; }
+
+.sino-dialog-select--border {
+  float: left;
+  width: 145px;
+  overflow: hidden; }
+
+.sino-dialog-option {
+  width: 158px;
+  height: 25px;
+  line-height: 25px;
+  border: 0;
+  background: transparent;
+  padding-left: 5px;
+  color: #999;
+  position: absolute;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  vertical-align: middle; }
+
+.sino-dialog-Lowertriangle {
+  float: right;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #f6b412; }
+
+.sino-dialog-textarea {
+  margin-top: 19px;
+  background: #fff;
+  width: 563px;
+  height: 50px; }
+
+.sino-dialog-textarea-input {
+  margin-left: 70px;
+  width: 493px;
+  height: 50px;
+  background: #eee; }
+
+.sino-dialog-textareas {
+  width: 491px;
+  height: 43px;
+  border: 1px solid #e4e4e4;
+  background: #eee;
+  color: #999;
+  padding-top: 5px; }
+
+.sino-dialog-Enclosure {
+  width: 255px;
+  height: 14px;
+  margin-top: 26px; }
+
+.sino-dialog-form-item-Label {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  line-height: 14px;
+  box-sizing: border-box; }
+
+.sino-dialog-form-item-Dot {
+  display: inline-block;
+  float: right;
+  margin-left: 6px;
+  width: 3px;
+  height: 8px; }
+
+.sino-dialog-Paperclip {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 14px; }
+
+.sino-dialog-PaperClip {
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: inline-block; }
+
+.sino-dialog-PaperClip, .iconfont.sino-qubiezhen {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; }
+
+.sino-dialog-Calculator {
+  float: left;
+  margin-left: 6px;
+  color: #333; }
+
+.sino-dialog-download {
+  font-size: 14px;
+  color: #399ff2;
+  margin-left: 20px; }
+
+.sino-dialog-footer {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  float: left;
+  width: 100%; }
+
+.sino-dialog-Close {
+  position: absolute;
+  left: 40%;
+  width: 130px;
+  height: 30px;
+  background: #f6b412;
+  border-radius: 3px;
+  line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #fff; }
+
+.sino-dialog-Close:hover {
+  background: #e2a715; }
+
+.sino-dialog .sino-scrollbar {
+  overflow: hidden; }
+
+.sino-dialog-hide .sino-scrollbar {
+  overflow: hidden; }
+
+.sino-dialog-wrapper .sino-dialog-scroll {
+  max-height: 470px;
+  width: 100%; }
+
+.sino-dialog-scrolldiv {
+  max-height: 470px; }
+
+/*# sourceMappingURL=sinoDialog.css.map */

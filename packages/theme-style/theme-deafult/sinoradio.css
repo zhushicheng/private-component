@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-radio {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 4px; }
+
+.sino-radio-span {
+  white-space: nowrap;
+  float: left;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333; }
+
+.sino-radio-inner {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #399ff2;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 4px; }
+
+.sino-radio-inner:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #399ff2;
+  border: 2px solid #fff;
+  display: none;
+  border-radius: 50%; }
+
+.sino-radio-span.is-checked .sino-radio-inner {
+  background: #399ff2; }
+
+.sino-radio-span.is-checked .sino-radio-inner:after {
+  display: block; }
+
+.sino-radio-span:last-child {
+  margin-right: 20px; }
+
+.sino-radio:last-child .sino-radio-span:last-child {
+  margin-right: 0; }
+
+.sino-radio-input {
+  display: none; }
+
+/*按钮禁用消失*/
+.sino-radio-span.is-disabled .sino-radio-inner:after {
+  border: 2px solid #ccc; }
+
+.sino-radio-span.is-disabled .sino-radio-inner {
+  background: #ccc; }
+
+/*按钮组*/
+.sino-radio-group {
+  display: inline-block;
+  font-size: 0;
+  line-height: 1;
+  vertical-align: middle; }
+
+.sino-radio-group .sino-radio {
+  font-size: 14px; }
+
+/*复选框单选*/
+.sino-radio-checkspan {
+  float: left;
+  position: relative;
+  height: 22px;
+  top: 0; }
+
+.sino-radio-checkspan .sino-tick {
+  color: #399ff2;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: -1px;
+  line-height: 15px;
+  float: left;
+  margin-top: -1px; }
+
+.sino-radio-checkspan .sino-radio-inner {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 6px; }
+
+.sino-radio-checkspan.is-checked .sino-radio-inner .sino-tick {
+  display: inline-block !important; }
+
+.sino-radio .sino-radio-checkspan + .sino-radio-span {
+  line-height: 27px;
+  margin-left: 21px; }
+
+/*# sourceMappingURL=sinoradio.css.map */

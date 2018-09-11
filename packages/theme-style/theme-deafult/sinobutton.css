@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-button {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #f6b412;
+  background: none;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #f6b412;
+  height: 30px;
+  width: 130px;
+  line-height: 30px;
+  cursor: pointer; }
+
+.sino-button:hover {
+  border: 1px solid #f6b412; }
+
+.sino-button i {
+  font-size: 18px;
+  margin-right: 7px; }
+
+.sino-button.is-success {
+  background: #91c77f;
+  color: #fff;
+  border: 0; }
+
+.sino-button.is-error {
+  background: #ff944c;
+  color: #fff;
+  border: 0; }
+
+/*警告*/
+.sino-button.is-warning {
+  background: #ffc333;
+  color: #fff;
+  border: 0; }
+
+.sino-button.is-danger {
+  background: #ff4949;
+  color: #fff;
+  border: 0; }
+
+/*主按钮*/
+.sino-button.is-primary {
+  background: #f6b412;
+  color: #fff; }
+
+.sino-button.is-primary:hover {
+  background: #e2a715;
+  color: #fff; }
+
+.sino-button.is-text {
+  border: 0;
+  color: #399ff2; }
+
+/*icon-text*/
+.sino-button.is-icon-text {
+  border: 0;
+  color: #f6b412;
+  width: auto; }
+
+.sino-button.is-icon-text i {
+  margin: 13px 6px 0 1px;
+  float: left;
+  color: #399ff2; }
+
+.sino-button.is-icon-text .icon-shuangjiantou-copy {
+  margin-right: 0; }
+
+.sino-button.is-icon-text .icon-angle-double-up {
+  margin-right: 0; }
+
+.sino-button.is-icon-text span {
+  margin-right: 20px;
+  line-height: 44px;
+  float: left;
+  color: #333; }
+
+/*禁用*/
+.sino-button.is-disabled {
+  background: #eee;
+  color: #999;
+  border-color: #e4e4e4; }
+
+.sino-button.is-disabled:hover {
+  background: #eee;
+  color: #999;
+  border-color: #e4e4e4;
+  cursor: default; }
+
+/*加载中*/
+.sino-button .sino-shuaxin {
+  display: inline-block;
+  animation: rotating 1s linear infinite; }
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=sinobutton.css.map */

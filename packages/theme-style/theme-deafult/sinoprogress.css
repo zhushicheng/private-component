@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-progress-bar-inner:after {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle; }
+
+.sino-progress {
+  position: relative;
+  line-height: 1; }
+
+.sino-progress.is-exception .sino-progress-bar-inner {
+  background-color: #ff4949; }
+
+.sino-progress.is-exception .sino-progress-text {
+  color: #ff4949; }
+
+.sino-progress.is-success .sino-progress-bar-inner {
+  background-color: #13ce66; }
+
+.sino-progress.is-success .sino-progress-text {
+  color: #13ce66; }
+
+.sino-progress-text {
+  font-size: 18px;
+  color: #48576a;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 1; }
+
+.sino-progress-circle .iconfont {
+  font-size: 30px; }
+
+.sino-progress-text i {
+  vertical-align: middle;
+  display: block; }
+
+.sino-progress-circle {
+  display: inline-block;
+  background: #fff; }
+
+.sino-progress-circle .sino-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+.sino-progress-circle .sino-progress-text i {
+  vertical-align: middle;
+  display: inline-block; }
+
+.sino-progress-without-text .sino-progress-text {
+  display: none; }
+
+.sino-progress-without-text .sino-progress-bar {
+  padding-right: 0;
+  margin-right: 0;
+  display: block; }
+
+.sino-progress-text-inside .sino-progress-bar {
+  padding-right: 0;
+  margin-right: 0; }
+
+.sino-progress-bar {
+  padding-right: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -55px;
+  box-sizing: border-box; }
+
+.sino-progress-bar-outer {
+  height: 6px;
+  border-radius: 100px;
+  background-color: #e4e4e4;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle; }
+
+.sino-progress-bar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #399ff2;
+  text-align: right;
+  border-radius: 100px;
+  line-height: 1; }
+
+.sino-progress-bar-innerText {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 5px; }
+
+@keyframes progress {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 32px 0; } }
+
+/*# sourceMappingURL=sinoprogress.css.map */

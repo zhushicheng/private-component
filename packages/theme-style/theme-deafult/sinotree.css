@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-tree {
+  padding: 20px;
+  background: #fff; }
+
+.tree {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 9px; }
+
+.tree .sino-checked-span {
+  margin-top: 1px;
+  margin-right: 7px;
+  float: none; }
+
+.tree:before {
+  position: absolute;
+  top: -20px;
+  bottom: 1pc;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  border: 1px dashed #ccc;
+  border-width: 0 0 0 1px;
+  content: ""; }
+
+.tree .tree-folder {
+  width: auto;
+  min-height: 20px;
+  cursor: pointer; }
+
+.tree .tree-folder .tree-folder-header {
+  position: relative;
+  height: 20px;
+  line-height: 20px; }
+
+.tree .tree-folder .tree-folder-header:hover {
+  background-color: #fff; }
+
+.tree .tree-folder .tree-folder-header .tree-folder-name, .tree .tree-item .tree-item-name {
+  z-index: 2;
+  display: inline; }
+
+.tree .tree-folder .tree-folder-header > [class*=icon-]:first-child, .tree .tree-item > [class*=icon-]:first-child {
+  position: relative;
+  top: -1px;
+  z-index: 2;
+  display: inline-block; }
+
+.tree .tree-folder .tree-folder-header .tree-folder-name {
+  margin-left: 2px; }
+
+.tree .tree-folder .tree-folder-header > [class*=icon-]:first-child {
+  margin: -2px 0 0 -2px; }
+
+.tree .tree-folder:last-child:after {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: -15px;
+  z-index: 1;
+  display: inline-block;
+  border-left: 1px solid #fff;
+  content: ""; }
+
+.tree .tree-folder .tree-folder-content {
+  position: relative;
+  margin-left: 20px; }
+
+.tree .tree-folder .tree-folder-content:before {
+  position: absolute;
+  top: -14px;
+  bottom: 1pc;
+  left: -14px;
+  z-index: 1;
+  display: inline-block;
+  border: 1px dashed #ccc;
+  border-width: 0 0 0 1px;
+  content: ""; }
+
+.tree .tree-item {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer; }
+
+.tree .tree-item:hover {
+  background-color: #f0f7fc; }
+
+.tree .tree-item .tree-item-name {
+  margin-left: 3px; }
+
+.tree .tree-item .tree-item-name > [class*=icon-]:first-child {
+  margin-right: 3px; }
+
+.tree .tree-item > [class*=icon-]:first-child {
+  margin-top: -1px; }
+
+.tree .tree-folder, .tree .tree-item {
+  position: relative; }
+
+.tree .tree-folder:before, .tree .tree-item:before {
+  position: absolute;
+  top: 14px;
+  left: -13px;
+  z-index: 1;
+  display: inline-block;
+  width: 18px;
+  height: 0;
+  border-top: 1px dashed #ccc;
+  content: ""; }
+
+.tree .tree-selected {
+  color: #6398b0; }
+
+.tree .tree-selected, .tree .tree-selected:hover {
+  background-color: rgba(98, 168, 209, 0.1); }
+
+.tree .tree-folder, .tree .tree-item {
+  border: 1px solid #fff; }
+
+.tree .tree-folder .tree-folder-header {
+  border-radius: 0; }
+
+.tree .tree-folder .tree-folder-header, .tree .tree-item {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 5px;
+  color: #4d6878; }
+
+.tree .tree-item > [class*=icon-]:first-child {
+  box-sizing: content-box;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #f9e8ce;
+  text-align: center;
+  font-size: 11px;
+  line-height: 13px; }
+
+.tree .tree-selected > [class*=icon-]:first-child {
+  border-color: #f9a021;
+  background-color: #f9a021;
+  color: #fff; }
+
+.tree .icon-minus[class*=icon-]:first-child, .tree .icon-plus[class*=icon-]:first-child {
+  position: relative;
+  z-index: 1;
+  box-sizing: content-box;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ddd;
+  border: 1px solid #8baebf;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 10px; }
+
+.tree .icon-plus[class*=icon-]:first-child:before {
+  position: relative;
+  z-index: 1;
+  display: block;
+  content: "+";
+  font-size: 1pc;
+  font-family: Open Sans; }
+
+.tree .icon-minus[class*=icon-]:first-child:before {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  display: block;
+  width: 7px;
+  height: 0;
+  border-top: 1px solid #4d6878;
+  content: ""; }
+
+.tree .tree-unselectable .tree-item > [class*=icon-]:first-child {
+  width: 13px;
+  height: 13px;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  color: #5084a0;
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px; }
+
+.tree [class*=icon-][class*=-down] {
+  transform: rotate(-45deg); }
+
+.tree .icon-spin {
+  height: auto; }
+
+.tree .tree-loading {
+  margin-left: 36px; }
+
+.tree img {
+  display: inline;
+  veritcal-align: middle; }
+
+.tree .tree-folder:before, .tree .tree-item:before {
+  width: 12px;
+  left: -8px; }
+
+.tree .tree-item, .tree .tree-folder {
+  border: 0; }
+
+.tree .tree-folder:last-child:after {
+  border-color: #fff;
+  left: -9px; }
+
+.el-checkbox__inner {
+  z-index: 111; }
+
+.tree:before {
+  top: 14px;
+  bottom: 16px; }
+
+.tree:last-child:after {
+  content: '';
+  border-left: 1px solid #FFF;
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  bottom: 0;
+  left: 0; }
+
+.tree .tree-folder .tree-folder-content:before {
+  left: -9px; }
+
+.sino-tree-node-expand-icon {
+  margin-right: 7px;
+  background: #fff;
+  position: relative;
+  z-index: 111; }
+
+.sino-tree-node-expand-icon {
+  content: "\E648";
+  color: #399ff2; }
+
+.sino-tree-node-expand-icon.expanded:before {
+  content: "\E649";
+  color: #399ff2; }
+
+.sino-tree-node-expand-icon.is-leaf {
+  display: none; }
+
+.sino-tree-node-expand-icon.is-leaf:before {
+  content: ""; }
+
+.sino-tree-folder {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  background: url("../icon/icon.png") no-repeat 0 0;
+  position: relative;
+  z-index: 111;
+  margin-top: 3px;
+  margin-right: 5px; }
+
+.sino-tree-folder.expanded {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  background: url("../icon/icon.png") no-repeat 0 -20px; }
+
+.sino-tree-folder.is-leaf {
+  width: 10px;
+  height: 12px;
+  background: url("../icon/icon.png") no-repeat 0 -38px; }
+
+.tree-folder-header .sino-checked-label {
+  float: left;
+  margin-top: 1px; }
+
+/*鼠标滑上*/
+.sino-tree-hover {
+  height: 25px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #ccc;
+  background: #fff;
+  z-index: 112;
+  padding: 0 3px;
+  line-height: 27px;
+  display: inline-block;
+  position: relative;
+  margin-top: -5px;
+  margin-left: 20px; }
+
+.sino-tree-hover i {
+  color: #399ff2;
+  margin: 0 6px;
+  line-height: 25px;
+  font-size: 19px; }
+
+.sino-tree-hover i.icon-shang, .sino-tree-hover i.icon-xia {
+  font-size: 18px; }
+
+.el-tree-node__label {
+  display: inline-block;
+  margin-top: -1px; }
+
+/*判断向上向下是否在第一和最后位置样式*/
+.sino-tree-hover i.is-firstIcon, .sino-tree-hover i.is-lastIcon {
+  color: #cfcfcf; }
+
+.tree .tree-folder .tree-folder-header:hover .el-tree-node__label {
+  color: #399ff2; }
+
+.tree .tree-folder .tree-folder-header .node-text-checked-style {
+  color: #399ff2; }
+
+/*判断根节点数据长度*/
+.tree.sino-tree-one-root {
+  padding-left: 0;
+  border: none; }
+
+.tree.sino-tree-one-root:before {
+  border: none; }
+
+.tree.sino-tree-one-root > .tree-folder:before {
+  border-top: none; }
+
+/*增加开关，添加样式*/
+.is-reduce .sino-checked-span .sino-checked-inner:before {
+  width: 0; }
+
+.is-reduce .sino-checked-span.is-indeterminate .sino-checked-inner:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  border-top: 2px solid #399ff2;
+  display: block;
+  left: 1px;
+  top: 6px; }
+
+/*# sourceMappingURL=sinotree.css.map */

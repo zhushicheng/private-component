@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.rebound-core-bg {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0 solid #333;
+  opacity: .8;
+  filter: alpha(opacity=8);
+  z-index: 999;
+  box-shadow: 0 0 0 100px #000;
+  overflow: hidden;
+  width: 167px;
+  height: 39px;
+  border-width: 20px 999999px 999999px 48px; }
+
+.rebound-core {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: 5px solid #000;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  box-shadow: inset 2px 2px 0 0 #9ccff8,inset -2px -2px 0 0 #9ccff8; }
+
+.rebound-contener {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  width: 500px;
+  height: 400px;
+  z-index: 1000; }
+
+.bg-arrow {
+  width: 30px;
+  height: 100%;
+  background-image: url(../img/guide-arrow.png);
+  background-repeat: no-repeat; }
+
+.contener-box {
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 30px;
+  border: 2px dashed #fff;
+  width: 350px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 30px; }
+
+.rebound-btn-box {
+  text-align: center;
+  padding-top: 30px; }
+
+.rebound-btn {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 5px 40px;
+  line-height: normal;
+  margin: 0 auto;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px; }
+
+/*# sourceMappingURL=sinorebound.css.map */

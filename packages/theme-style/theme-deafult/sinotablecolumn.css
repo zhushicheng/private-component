@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-checkbox, .sino-checkbox__input {
+  cursor: pointer;
+  display: inline-block;
+  position: relative; }
+
+.sino-checkbox, .sino-checkbox-button__inner {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  white-space: nowrap; }
+
+.sino-checkbox {
+  color: #1f2d3d; }
+
+.sino-checkbox + .sino-checkbox {
+  margin-left: 15px; }
+
+.sino-checkbox__input {
+  white-space: nowrap;
+  outline: 0;
+  line-height: 1;
+  vertical-align: middle; }
+
+.sino-checkbox__input.is-indeterminate .sino-checkbox__inner {
+  background-color: #20a0ff;
+  border-color: #0190fe; }
+
+.sino-checkbox__input.is-indeterminate .sino-checkbox__inner::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border: 1px solid #fff;
+  margin-top: -1px;
+  left: 3px;
+  right: 3px;
+  top: 50%; }
+
+.sino-checkbox__input.is-indeterminate .sino-checkbox__inner::after {
+  display: none; }
+
+.sino-checkbox__input.is-focus .sino-checkbox__inner {
+  border-color: #20a0ff; }
+
+.sino-checkbox__input.is-checked .sino-checkbox__inner {
+  background-color: #20a0ff;
+  border-color: #0190fe; }
+
+.sino-checkbox__input.is-checked .sino-checkbox__inner::after {
+  -ms-transform: rotate(45deg) scaleY(1);
+  transform: rotate(45deg) scaleY(1); }
+
+.sino-checkbox__input.is-disabled .sino-checkbox__inner {
+  background-color: #eef1f6;
+  border-color: #d1dbe5;
+  cursor: not-allowed; }
+
+.sino-checkbox__input.is-disabled .sino-checkbox__inner::after {
+  cursor: not-allowed;
+  border-color: #eef1f6; }
+
+.sino-checkbox__input.is-disabled .sino-checkbox__inner + .sino-checkbox__label {
+  cursor: not-allowed; }
+
+.sino-checkbox__input.is-disabled.is-checked .sino-checkbox__inner {
+  background-color: #d1dbe5;
+  border-color: #d1dbe5; }
+
+.sino-checkbox__input.is-disabled.is-checked .sino-checkbox__inner::after {
+  border-color: #fff; }
+
+.sino-checkbox__input.is-disabled.is-indeterminate .sino-checkbox__inner {
+  background-color: #d1dbe5;
+  border-color: #d1dbe5; }
+
+.sino-checkbox__input.is-disabled.is-indeterminate .sino-checkbox__inner::before {
+  border-color: #fff; }
+
+.sino-checkbox__input.is-disabled + .sino-checkbox__label {
+  color: #bbb;
+  cursor: not-allowed; }
+
+.sino-checkbox__inner {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #bfcbd9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  z-index: 1;
+  transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46); }
+
+.sino-checkbox__inner:hover {
+  border-color: #20a0ff; }
+
+.sino-checkbox__inner::after {
+  box-sizing: content-box;
+  content: "";
+  border: 2px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  height: 8px;
+  left: 5px;
+  position: absolute;
+  top: 1px;
+  -ms-transform: rotate(45deg) scaleY(0);
+  transform: rotate(45deg) scaleY(0);
+  width: 4px;
+  transition: transform 0.15s cubic-bezier(0.71, -0.46, 0.88, 0.6) 0.05s;
+  -ms-transform-origin: center;
+  transform-origin: center; }
+
+.sino-checkbox__original {
+  opacity: 0;
+  outline: 0;
+  position: absolute;
+  margin: 0;
+  width: 0;
+  height: 0;
+  left: -999px; }
+
+.sino-checkbox-button, .sino-checkbox-button__inner {
+  position: relative;
+  display: inline-block; }
+
+.sino-checkbox__label {
+  font-size: 14px;
+  padding-left: 5px; }
+
+.sino-checkbox-button.is-checked .sino-checkbox-button__inner {
+  color: #fff;
+  background-color: #20a0ff;
+  border-color: #20a0ff;
+  box-shadow: -1px 0 0 0 #20a0ff; }
+
+.sino-checkbox-button.is-disabled .sino-checkbox-button__inner {
+  color: #bfcbd9;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #eef1f6;
+  border-color: #d1dbe5;
+  box-shadow: none; }
+
+.sino-checkbox-button.is-focus .sino-checkbox-button__inner {
+  border-color: #20a0ff; }
+
+.sino-checkbox-button:first-child .sino-checkbox-button__inner {
+  border-left: 1px solid #bfcbd9;
+  border-radius: 4px 0 0 4px;
+  box-shadow: none !important; }
+
+.sino-checkbox-button:last-child .sino-checkbox-button__inner {
+  border-radius: 0 4px 4px 0; }
+
+.sino-checkbox-button__inner {
+  line-height: 1;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #bfcbd9;
+  border-left: 0;
+  color: #1f2d3d;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 0; }
+
+.sino-checkbox-button__inner:hover {
+  color: #20a0ff; }
+
+.sino-checkbox-button__inner [class*=sino-icon-] {
+  line-height: .9; }
+
+.sino-checkbox-button__inner [class*=sino-icon-] + span {
+  margin-left: 5px; }
+
+.sino-checkbox-button__original {
+  opacity: 0;
+  outline: 0;
+  position: absolute;
+  margin: 0;
+  visibility: hidden;
+  left: -999px; }
+
+.sino-checkbox-button--large .sino-checkbox-button__inner {
+  padding: 11px 19px;
+  font-size: 16px;
+  border-radius: 0; }
+
+.sino-checkbox-button--small .sino-checkbox-button__inner {
+  padding: 7px 9px;
+  font-size: 12px;
+  border-radius: 0; }
+
+.sino-checkbox-button--mini .sino-checkbox-button__inner {
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 0; }
+
+.sino-tag {
+  background-color: #8391a5;
+  display: inline-block;
+  padding: 0 5px;
+  height: 24px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  white-space: nowrap; }
+
+.sino-tag .sino-icon-close {
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+  -ms-transform: scale(0.75, 0.75);
+  transform: scale(0.75, 0.75);
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  vertical-align: middle;
+  top: -1px;
+  right: -2px; }
+
+.sino-tag .sino-icon-close:hover {
+  background-color: #fff;
+  color: #8391a5; }
+
+.sino-tag--gray {
+  background-color: #e4e8f1;
+  border-color: #e4e8f1;
+  color: #48576a; }
+
+.sino-tag--gray .sino-tag__close:hover {
+  background-color: #48576a;
+  color: #fff; }
+
+.sino-tag--gray.is-hit {
+  border-color: #48576a; }
+
+.sino-tag--primary {
+  background-color: rgba(32, 160, 255, 0.1);
+  border-color: rgba(32, 160, 255, 0.2);
+  color: #20a0ff; }
+
+.sino-tag--primary .sino-tag__close:hover {
+  background-color: #20a0ff;
+  color: #fff; }
+
+.sino-tag--primary.is-hit {
+  border-color: #20a0ff; }
+
+.sino-tag--success {
+  background-color: rgba(18, 206, 102, 0.1);
+  border-color: rgba(18, 206, 102, 0.2);
+  color: #13ce66; }
+
+.sino-tag--success .sino-tag__close:hover {
+  background-color: #13ce66;
+  color: #fff; }
+
+.sino-tag--success.is-hit {
+  border-color: #13ce66; }
+
+.sino-tag--warning {
+  background-color: rgba(247, 186, 41, 0.1);
+  border-color: rgba(247, 186, 41, 0.2);
+  color: #f7ba2a; }
+
+.sino-tag--warning .sino-tag__close:hover {
+  background-color: #f7ba2a;
+  color: #fff; }
+
+.sino-tag--warning.is-hit {
+  border-color: #f7ba2a; }
+
+.sino-tag--danger {
+  background-color: rgba(255, 73, 73, 0.1);
+  border-color: rgba(255, 73, 73, 0.2);
+  color: #ff4949; }
+
+.sino-tag--danger .sino-tag__close:hover {
+  background-color: #ff4949;
+  color: #fff; }
+
+.sino-tag--danger.is-hit {
+  border-color: #ff4949; }
+
+.sino-table-column--selection .cell {
+  padding-left: 14px;
+  padding-right: 14px; }
+
+.sino-table-filter {
+  border: 1px solid #d1dbe5;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  margin: 2px 0; }
+
+.sino-table-filter__list {
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  min-width: 100px; }
+
+.sino-table-filter__list-item {
+  line-height: 36px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 14px; }
+
+.sino-table-filter__list-item:hover {
+  background-color: #e4e8f1;
+  color: #48576a; }
+
+.sino-table-filter__list-item.is-active {
+  background-color: #20a0ff;
+  color: #fff; }
+
+.sino-table-filter__content {
+  min-width: 100px; }
+
+.sino-table-filter__bottom {
+  border-top: 1px solid #d1dbe5;
+  padding: 8px; }
+
+.sino-table-filter__bottom button {
+  background: 0 0;
+  border: none;
+  color: #8391a5;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 3px; }
+
+.sino-table-filter__bottom button:hover {
+  color: #20a0ff; }
+
+.sino-table-filter__bottom button:focus {
+  outline: 0; }
+
+.sino-table-filter__bottom button.is-disabled {
+  color: #bfcbd9;
+  cursor: not-allowed; }
+
+.sino-table-filter__checkbox-group {
+  padding: 10px; }
+
+.sino-table-filter__checkbox-group label.sino-checkbox {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 5px; }
+
+.sino-table-filter__checkbox-group .sino-checkbox:last-child {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=sinotablecolumn.css.map */

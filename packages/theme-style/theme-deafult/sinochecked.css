@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-checked-label {
+  display: inline-block; }
+
+.sino-checked-span {
+  float: left;
+  line-height: 15px;
+  margin-right: 5px; }
+
+.sino-checked-input {
+  display: none; }
+
+.sino-checked-inner {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  overflow: hidden; }
+
+.sino-checked-inner i {
+  color: #399ff2;
+  line-height: 15px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: -1px;
+  display: none; }
+
+.sino-checked-span .sino-checked-inner i {
+  color: #399ff2;
+  font-size: 17px; }
+
+.sino-checked-span.is-checked .sino-checked-inner i {
+  display: block; }
+
+.sino-checked-span.is-disabled .sino-checked-inner {
+  background: #eee; }
+
+.sino-checked-span.is-disabled .sino-checked-inner i {
+  color: #999; }
+
+/*# sourceMappingURL=sinochecked.css.map */

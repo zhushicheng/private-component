@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-tooltip__popper {
+  position: absolute;
+  border-radius: 4px;
+  padding: 10px 15px;
+  z-index: 2000;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #399ff2; }
+
+.sino-tooltip__popper .popper__arrow, .sino-tooltip__popper .popper__arrow::after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.sino-tooltip__popper .popper__arrow {
+  border-width: 6px; }
+
+.sino-tooltip__popper .popper__arrow::after {
+  content: " ";
+  border-width: 5px; }
+
+.sino-tooltip__popper[x-placement^=top] {
+  margin-bottom: 12px; }
+
+.sino-tooltip__popper[x-placement^=top] .popper__arrow {
+  bottom: -6px;
+  border-top-color: #1f2d3d;
+  border-bottom-width: 0; }
+
+.sino-tooltip__popper[x-placement^=top] .popper__arrow::after {
+  bottom: 1px;
+  margin-left: -5px;
+  border-top-color: #1f2d3d;
+  border-bottom-width: 0; }
+
+.sino-tooltip__popper[x-placement^=bottom] {
+  margin-top: 12px; }
+
+.sino-tooltip__popper[x-placement^=bottom] .popper__arrow {
+  top: -6px;
+  border-top-width: 0;
+  border-bottom-color: #1f2d3d; }
+
+.sino-tooltip__popper[x-placement^=bottom] .popper__arrow::after {
+  top: 1px;
+  margin-left: -5px;
+  border-top-width: 0;
+  border-bottom-color: #1f2d3d; }
+
+.sino-tooltip__popper[x-placement^=right] {
+  margin-left: 12px; }
+
+.sino-tooltip__popper[x-placement^=right] .popper__arrow {
+  left: -6px;
+  border-right-color: #1f2d3d;
+  border-left-width: 0; }
+
+.sino-tooltip__popper[x-placement^=right] .popper__arrow::after {
+  bottom: -5px;
+  left: 1px;
+  border-right-color: #1f2d3d;
+  border-left-width: 0; }
+
+.sino-tooltip__popper[x-placement^=left] {
+  margin-right: 12px; }
+
+.sino-tooltip__popper[x-placement^=left] .popper__arrow {
+  right: -6px;
+  border-right-width: 0;
+  border-left-color: #1f2d3d; }
+
+.sino-tooltip__popper[x-placement^=left] .popper__arrow::after {
+  right: 1px;
+  bottom: -5px;
+  margin-left: -5px;
+  border-right-width: 0;
+  border-left-color: #1f2d3d; }
+
+.sino-tooltip__popper.is-light {
+  background: #fff;
+  border: 1px solid #399ff2; }
+
+.sino-tooltip__popper.is-light[x-placement^=top] .popper__arrow {
+  border-top-color: #399ff2; }
+
+.sino-tooltip__popper.is-light[x-placement^=top] .popper__arrow::after {
+  border-top-color: #fff; }
+
+.sino-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: #399ff2; }
+
+.sino-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow::after {
+  border-bottom-color: #fff; }
+
+.sino-tooltip__popper.is-light[x-placement^=left] .popper__arrow {
+  border-left-color: #399ff2; }
+
+.sino-tooltip__popper.is-light[x-placement^=left] .popper__arrow::after {
+  border-left-color: #fff; }
+
+.sino-tooltip__popper.is-light[x-placement^=right] .popper__arrow {
+  border-right-color: #399ff2; }
+
+.sino-tooltip__popper.is-light[x-placement^=right] .popper__arrow::after {
+  border-right-color: #fff; }
+
+.sino-tooltip__popper.is-dark {
+  background: #1f2d3d;
+  color: #fff; }
+
+/*# sourceMappingURL=sinotooltip.css.map */

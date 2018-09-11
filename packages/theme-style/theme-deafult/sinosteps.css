@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-step-head, .sino-steps.is-horizontal.is-center {
+  text-align: center; }
+
+.sino-steps {
+  font-size: 0; }
+
+.sino-steps > :last-child .sino-step-line {
+  display: none; }
+
+.sino-step-line, .sino-step.is-horizontal, .sino-step.is-vertical .sino-step-head, .sino-step.is-vertical .sino-step-main {
+  display: inline-block; }
+
+.sino-step {
+  position: relative;
+  vertical-align: top; }
+
+.sino-step:last-child .sino-step-main {
+  padding-right: 0; }
+
+.sino-step.is-vertical .sino-step-main {
+  padding-left: 10px; }
+
+.sino-step-line {
+  position: absolute;
+  border-color: inherit;
+  background-color: #ccc; }
+
+.sino-step-line.is-vertical {
+  width: 4px;
+  box-sizing: border-box;
+  top: 28px;
+  bottom: 0;
+  left: 12px; }
+
+.sino-step-line.is-horizontal {
+  top: 12px;
+  height: 4px;
+  left: 28px;
+  right: 0; }
+
+.sino-step-line.is-icon.is-horizontal {
+  right: 4px; }
+
+.sino-step-line-inner {
+  display: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: inherit;
+  transition: all 150ms;
+  width: 0;
+  height: 0; }
+
+.sino-step-icon {
+  display: block;
+  line-height: 22px; }
+
+.sino-step-icon > * {
+  line-height: inherit;
+  vertical-align: middle; }
+
+.sino-step-head {
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: transparent;
+  line-height: 22px;
+  font-size: 22px;
+  vertical-align: top;
+  transition: all 150ms; }
+
+.sino-carousel-arrow, .sino-carousel-button {
+  margin: 0;
+  transition: .3s;
+  cursor: pointer;
+  outline: 0; }
+
+.sino-step-head.is-finish {
+  color: #20a0ff;
+  border-color: #20a0ff; }
+
+.sino-step-head.is-error {
+  color: #ff4949;
+  border-color: #ff4949; }
+
+.sino-step-head.is-success {
+  color: #13ce66;
+  border-color: #13ce66; }
+
+.sino-step-head.is-process, .sino-step-head.is-wait {
+  color: #bfcbd9;
+  border-color: #bfcbd9; }
+
+.sino-step-head.is-text {
+  font-size: 14px;
+  border-width: 3px;
+  border-style: solid; }
+
+.sino-step-head.is-text.is-finish {
+  color: #fff;
+  background-color: #ffc333;
+  border-color: #fff4da; }
+
+.sino-step-head.is-text.is-error {
+  color: #fff;
+  background-color: #fd9353;
+  border-color: #fed0b4; }
+
+.sino-step-head.is-text.is-success {
+  border: 2px solid #ffc333; }
+
+.sino-step-head.is-text.is-success .sino-step-icon {
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff4da; }
+
+.sino-step-head.is-text.is-success .sino-step-icon .iconfont {
+  color: #ffc333;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: -4px;
+  position: relative;
+  top: -2px; }
+
+.sino-step-head.is-text.is-wait {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #f5f5f5; }
+
+.sino-step-head.is-text.is-process {
+  color: #fff;
+  background-color: #ffc333;
+  border-color: #fff4da; }
+
+.sino-step-main {
+  white-space: normal;
+  text-align: center;
+  position: relative;
+  left: -50%;
+  margin-left: 28px; }
+
+.sino-step-title {
+  font-size: 14px;
+  line-height: 32px;
+  display: block; }
+
+.sino-step-title.is-finish {
+  font-weight: 400;
+  color: #666; }
+
+.sino-step-title.is-error {
+  font-weight: 400;
+  color: #666; }
+
+.sino-step-title.is-success {
+  font-weight: 400;
+  color: #666; }
+
+.sino-step-title.is-wait {
+  font-weight: 400;
+  color: #999; }
+
+.sino-step-title.is-process {
+  font-weight: 400;
+  color: #666; }
+
+.sino-step-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px; }
+
+.sino-step-description.is-finish {
+  color: #999; }
+
+.sino-step-description.is-error {
+  color: #999; }
+
+.sino-step-description.is-success {
+  color: #999; }
+
+.sino-step-description.is-wait {
+  color: #999; }
+
+.sino-step-description.is-process {
+  color: #999; }
+
+.sino-step-line-is-success {
+  background-color: #ffc334; }
+
+.sino-step-line-is-progress {
+  background-color: #ccc; }
+
+.sino-step-line-is-wait {
+  background-color: #ccc; }
+
+/*# sourceMappingURL=sinosteps.css.map */

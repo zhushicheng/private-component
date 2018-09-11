@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-transfer {
+  font-size: 14px; }
+
+.sino-transfer-scrollbar {
+  width: 100%;
+  height: 260px; }
+
+.sino-transfer-panel {
+  width: 288px;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  vertical-align: middle; }
+
+.sino-transfer-panel-height {
+  border-bottom: 0; }
+
+.sino-transfer-panel-header {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #e4e4e4;
+  padding-left: 15px; }
+
+.sino-transfer-panel-footer {
+  border-top: 1px solid #e4e4e4;
+  min-height: 24px;
+  padding: 0 10px 10px 10px; }
+
+.sino-transfer-panel-footer.sino-transfer-panel-footer-height {
+  height: 44px;
+  border-top: 0; }
+
+.sino-transfer-panel-body {
+  height: 260px; }
+
+.sino-transfer-panel-list {
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+  overflow: auto;
+  box-sizing: border-box; }
+
+.sino-transfer-panel-item {
+  padding-left: 15px;
+  height: 38px;
+  line-height: 38px;
+  display: block; }
+
+.sino-transfer-panel-item .sino-checked-span {
+  margin-top: 10px; }
+
+.sino-transfer-panel-footer .sino-checked-span {
+  margin-top: 10px; }
+
+.sino-transfer-panel-footer .sino-checked-span:first-child {
+  margin-left: 15px; }
+
+.sino-transfer-buttons {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px; }
+
+.sino-transfer-buttons .sino-button {
+  width: 32px;
+  height: 22px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin: 5px 0;
+  display: block; }
+
+.sino-transfer-buttons .sino-button:last-child {
+  clear: both; }
+
+.sino-transfer-buttons .sino-button-span {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  width: 100%; }
+
+.sino-transfer-buttons .sino-button-span i {
+  font-size: 15px; }
+
+.sino-transfer .sino-button.is-primary {
+  background: #399ff2;
+  border: 1px solid #399ff2; }
+
+.sino-transfer .sino-button.is-primary:hover {
+  background: #399ff2;
+  border: 1px solid #399ff2; }
+
+.sino-transfer .sino-button.is-disabled {
+  background: #e4e4e4;
+  border: 1px solid #ddd; }
+
+.sino-transfer .sino-button.is-disabled:hover {
+  background: #e4e4e4;
+  border: 1px solid #ddd; }
+
+.el-transfer-panel__empty {
+  padding-left: 15px;
+  line-height: 38px; }
+
+.tip-icon {
+  right: -3px;
+  color: #399ff2;
+  font-size: 13px; }
+
+.sino-transfer-panel-checkedall {
+  margin: 10px 10px 0 10px;
+  height: 30px;
+  background: #eee; }
+
+.sino-transfer-panel-checkedall .sino-checked-inner {
+  margin: 7px 0 0 5px; }
+
+.sino-transfer-panel-checkedall .sino-checked-span {
+  line-height: 30px; }
+
+.sino-transfer-filter {
+  margin: 10px 10px 0 10px;
+  height: 23px;
+  border: 1px solid #e4e4e4; }
+
+.sino-transfer-filter .sino-input {
+  float: left;
+  width: 88%;
+  height: 100%; }
+
+.sino-transfer-filter .sino-input .sino-input-inner {
+  width: 100%;
+  height: 23px;
+  border: 0;
+  line-height: 23px; }
+
+.sino-transfer-filter i {
+  height: 15px;
+  padding: 0 7px;
+  border-left: 1px solid #e4e4e4;
+  color: #ccc;
+  margin-top: 4px; }
+
+/*# sourceMappingURL=sinotransfer.css.map */

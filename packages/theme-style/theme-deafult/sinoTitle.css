@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-level-one {
+  width: 100%;
+  height: 34px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1px; }
+
+.sino-level-one .sino-title-i {
+  display: none; }
+
+.sino-level-one h3 {
+  height: 33px;
+  padding-right: 5px;
+  border-bottom: 3px solid #399ff2;
+  line-height: 33px;
+  font-size: 16px;
+  color: #333; }
+
+.sino-level-two {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #e9e9e9;
+  background: #fafafa; }
+
+.sino-level-two .sino-title-i {
+  width: 3px;
+  height: 14px;
+  background: #ffc333;
+  margin: 8px 5px 0 5px; }
+
+.sino-level-two h3 {
+  font-size: 14px;
+  color: #333;
+  line-height: 30px; }
+
+.sino-level-two .sino-button.is-icon-text .sino-button-span {
+  color: #399ff2; }
+
+/*# sourceMappingURL=sinoTitle.css.map */

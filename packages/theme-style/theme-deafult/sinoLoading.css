@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.el-loading-mask {
+  position: absolute;
+  z-index: 444;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .3s; }
+
+.el-loading-mask.is-fullscreen {
+  position: fixed; }
+
+.el-loading-mask.is-fullscreen .el-loading-spinner {
+  margin-top: -25px; }
+
+.el-loading-mask.is-fullscreen .el-loading-spinner .circular {
+  width: 50px;
+  height: 50px; }
+
+.el-loading-spinner {
+  top: 50%;
+  margin-top: -21px;
+  width: 100%;
+  text-align: center;
+  position: absolute; }
+
+.el-loading-spinner .el-loading-text {
+  color: #20a0ff;
+  margin: 3px 0;
+  font-size: 14px; }
+
+.el-loading-spinner .circular {
+  width: 42px;
+  height: 42px;
+  animation: loading-rotate 2s linear infinite; }
+
+.el-loading-spinner .path {
+  animation: loading-dash 1.5s ease-in-out infinite;
+  stroke-dasharray: 90,150;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: #20a0ff;
+  stroke-linecap: round; }
+
+.el-loading-fade-enter, .el-loading-fade-leave-active {
+  opacity: 0; }
+
+@keyframes loading-rotate {
+  100% {
+    transform: rotate(360deg); } }
+@keyframes loading-dash {
+  0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -40px; }
+  100% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -120px; } }
+
+/*# sourceMappingURL=sinoLoading.css.map */

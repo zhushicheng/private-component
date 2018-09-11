@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-message-box-wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2004 !important; }
+
+.sino-message-box {
+  width: 410px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -127px 0 0 -220px;
+  z-index: 111;
+  background: #fff;
+  border-radius: 2px;
+  padding: 7px 15px; }
+
+.sino-message-con {
+  display: inline-block; }
+
+.sino-message-tit {
+  height: 31px;
+  line-height: 31px;
+  border-bottom: 1px solid #ddd;
+  width: 100%; }
+
+.sino-message-tit span {
+  padding-right: 5px;
+  height: 30px;
+  border-bottom: 3px solid #399ff2;
+  font-size: 16px;
+  color: #333; }
+
+.sino-message-tit i {
+  color: #399ff2;
+  margin-top: 10px;
+  cursor: pointer; }
+
+.sino-message-box-content {
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+
+.sino-message-box-status {
+  width: 56px;
+  height: 56px;
+  border: 4px solid #ffedc1;
+  border-radius: 50%;
+  margin: 40px 20px 0 15px;
+  text-align: center;
+  display: none;
+  float: left; }
+
+.sino-message-box-message {
+  padding-top: 40px;
+  max-width: 75%;
+  min-height: 64px;
+  line-height: 64px;
+  display: inline-block;
+  max-height: 150px;
+  overflow-y: auto; }
+
+.sino-message-box-message p {
+  text-align: left;
+  line-height: 29px;
+  font-size: 16px;
+  color: #666;
+  display: inline-block; }
+
+.sino-message-box-btns {
+  padding: 30px 15px 17px 15px;
+  text-align: center;
+  width: 100%;
+  clear: both; }
+
+.sino-message-box-btns .sino-button {
+  display: inline-block; }
+
+.sino-message-box-btns .sino-button:nth-of-type(2) {
+  margin-left: 10px;
+  width: auto;
+  padding: 0 10px; }
+
+.sino-message-gantanhao {
+  display: inline-block;
+  border-color: #ffedc1; }
+
+.sino-message-duigou {
+  display: inline-block;
+  border-color: #deeed8; }
+
+.sino-message-error {
+  display: inline-block;
+  border-color: #ffd1b2; }
+
+.sino-message-i {
+  display: inline-block;
+  border-color: #c3e2fb; }
+
+.sino-message-box-status i {
+  color: #ffc333;
+  margin: 15px auto 0 auto;
+  display: inline-block;
+  font-size: 27px; }
+
+.sino-message-box-status .sino-duigou {
+  margin-top: 12px;
+  font-size: 35px;
+  color: #91c77f; }
+
+.sino-message-box-status .sino-guanbi {
+  margin-top: 20px;
+  font-size: 21px;
+  color: #ff944c; }
+
+.sino-message-box-status .sino-i {
+  margin-top: 16px;
+  font-size: 27px;
+  color: #399ff2; }
+
+.sino-message-box-input .sino-input {
+  width: 100%;
+  height: auto; }
+
+.sino-message-box-input input {
+  float: left; }
+
+.sino-message-box-errormsg {
+  color: #ff6600;
+  margin-top: 7px; }
+
+.sino-msg-input {
+  padding: 30px 0; }
+
+.sino-msg-input .sino-message-box-msg {
+  width: 40%;
+  float: left;
+  height: 25px;
+  text-align: right;
+  line-height: 25px; }
+
+.sino-msg-input .sino-message-box-input {
+  width: 60%;
+  float: left;
+  height: 25px; }
+
+.sino-msg-input .sino-message-box-input .tip-icon-1 {
+  position: inherit;
+  float: left;
+  margin-left: 5px; }
+
+/*# sourceMappingURL=sinomessagebox.css.map */

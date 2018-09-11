@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-dropdown {
+  font-size: 14px;
+  color: #333; }
+
+.sino-autocomplete, .sino-dropdown {
+  position: relative;
+  display: inline-block; }
+
+.sino-dropdown-menu {
+  position: absolute;
+  right: -6px;
+  top: 48px;
+  width: 120px;
+  height: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(4, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 2px 2px rgba(4, 0, 0, 0.1);
+  box-shadow: 0 0 2px 2px rgba(4, 0, 0, 0.1); }
+
+.task_menu {
+  width: 270px; }
+
+.role_menu {
+  width: 127px;
+  border-radius: 0;
+  cursor: default; }
+
+.sino-dropdown-menu-item {
+  height: 29px;
+  line-height: 29px;
+  font-size: 14px;
+  color: #666;
+  padding-left: 19px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.task_menu .sino-dropdown-menu-item {
+  padding-left: 0; }
+
+.sino-dropdown-menu .sino-dropdown-menu-item:last-child {
+  border-bottom: 0; }
+
+.task_circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffc333;
+  margin: 12px 10px 0 15px; }
+
+.task_name {
+  width: 168px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.task_todo {
+  margin-left: 31px;
+  color: #399ff2; }
+
+.sino-dropdown-menu-item.is-task_title {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background: #7bc2fb;
+  border-radius: 5px 5px 0 0;
+  margin-top: -7px; }
+
+.sino-dropdown-menu-item.is-disabled {
+  background: #eee;
+  color: #999;
+  cursor: default; }
+
+.sino-dropdown-link {
+  border: 1px solid #fff;
+  height: 31px;
+  display: inline-block;
+  line-height: 31px;
+  cursor: default; }
+
+.sino-dropdown-link.is-active {
+  border: 1px solid #ccc; }
+
+.sino-dropdown-link.is-delete {
+  border: 1px solid #fff; }
+
+.sino-dropdown-link i {
+  margin: 0 12px 0 9px; }
+
+.sino-dropdown-link i:nth-of-type(1) {
+  color: #399ff2;
+  margin: 0 10px; }
+
+.role_menu .sino-dropdown-menu-item {
+  padding: 0;
+  margin: 0 5px;
+  text-align: center;
+  border-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.role_menu .sino-dropdown-menu-item:hover {
+  background: #fef7e7; }
+
+/*# sourceMappingURL=sinodropdown.css.map */

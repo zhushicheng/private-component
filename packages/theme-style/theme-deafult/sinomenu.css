@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-menu {
+  float: left;
+  width: 219px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  position: relative; }
+
+.menu {
+  position: fixed;
+  width: 219px;
+  min-height: 100%;
+  height: 100%;
+  z-index: 333; }
+
+.sino-menu-item, .sino-submenu-title {
+  line-height: 39px;
+  border-bottom: 1px solid #e9f0f5;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  cursor: default;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap; }
+
+.sino-submenu [class^=iconfont] {
+  margin-right: 15px;
+  color: #baddfa; }
+
+.sino-menu-item .iconfont {
+  color: #baddfa; }
+
+.sino-menu-item [class^=iconfont] {
+  margin-right: 10px; }
+
+.sino-submenu .sino-menu .sino-menu-item [class^=iconfont] {
+  margin-right: 0; }
+
+.sino-menu-item .sino-shezhi {
+  float: right;
+  display: inline-block;
+  line-height: 39px;
+  margin-right: 15px;
+  color: #e4e4e4; }
+
+.sino-menu .sino-iconjia, .sino-menu .sino-jianhao1 {
+  position: absolute;
+  right: 15px;
+  transition: transform .3s;
+  font-size: 14px;
+  margin-right: 0;
+  display: inline-block;
+  line-height: 39px;
+  color: #e4e4e4; }
+
+.sino-menu .sino-shezhi {
+  font-size: 14px; }
+
+.sino-submenu.is-opened .sino-menu-item .sino-iconfontyuan {
+  margin-right: 0;
+  color: #d4e2eb; }
+
+.sino-submenu .sino-menu {
+  background: #f3f5f7; }
+
+.sino-submenu .sino-menu .sino-menu-item {
+  border-bottom: 0; }
+
+/*点开*/
+.sino-submenu.is-opened .iconfont {
+  color: #399ff2; }
+
+.sino-submenu.is-opened .iconfont.sino-iconfontyuan {
+  margin-right: 0; }
+
+.sino-submenu.is-opened .sino-iconjia {
+  transform: rotate(135deg); }
+
+.sino-submenu.is-opened .sino-menu-item.is-active {
+  color: #399ff2;
+  background: #fafcfc; }
+
+.sino-submenu.is-opened .sino-menu-item.is-active .sino-iconfontyuan {
+  color: #42a0ef; }
+
+.sino-submenu .sino-menu.sino-menu-item {
+  border-bottom: 0;
+  line-height: 36px;
+  color: #666;
+  font-size: 14px;
+  cursor: default;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap; }
+
+.sino-submenu .sino-menu .sino-menu-item i {
+  color: #e4e4e4; }
+
+.sino-submenu .sino-menu .sino-menu-item:last-child {
+  border-bottom: 1px solid #e9f0f5; }
+
+/*.sino-submenu.is-opened .sino-submenu-title{background: #f1f5f8}*/
+.sino-submenu .sino-submenu-title:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #399ff2;
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: 111; }
+
+/*.sino-menu-item:before{content: "";width: 3px;height: 100%;background: $mainColor;position: absolute;left: 0;top: -1px;display: none;z-index: 111}
+.sino-menu-item.is-active:before{display: inline-block}*/
+.sino-menu:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #399ff2;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  display: none;
+  z-index: 111; }
+
+.sino-submenu.is-opened .sino-submenu-title:before {
+  display: inline-block; }
+
+.sino-submenu.is-opened .sino-menu:before {
+  display: inline-block; }
+
+/*鼠标滑上*/
+.sino-submenu-title:hover .iconfont {
+  color: #399ff2; }
+
+.sino-menu-item:hover .iconfont {
+  color: #399ff2; }
+
+.sino-submenu .sino-menu .sino-menu-item:hover {
+  background: #fafcfc;
+  color: #333; }
+
+.sino-submenu .sino-menu .sino-menu-item:hover .sino-iconfontyuan {
+  color: #ccc; }
+
+.sino-submenu.is-opened .sino-menu-item.is-active:hover {
+  color: #399ff2; }
+
+.sino-submenu.is-opened .sino-menu-item.is-active:hover .sino-iconfontyuan {
+  color: #399ff2; }
+
+.sino-menu-item.is-active {
+  background: #f3faff; }
+
+.sino-menu-item.is-active .iconfont {
+  color: #399ff2; }
+
+/*展开收起*/
+.colspan {
+  width: 10px;
+  height: 34px;
+  border: 1px solid #ddd;
+  border-left: 1px solid #f4f7f9;
+  background: #f4f7f9;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 219px;
+  z-index: 112;
+  cursor: pointer; }
+
+.colspan i {
+  line-height: 34px;
+  color: #399ff2;
+  font-size: 12px;
+  margin-left: -2px; }
+
+.colspan.rightCol {
+  left: 48px; }
+
+.sino-menu.sino-menu-collapse {
+  width: 48px; }
+
+.sino-menu.sino-menu-collapse .sino-iconjia, .sino-menu.sino-menu-collapse .sino-jianhao1, .sino-menu.sino-menu-collapse .sino-shezhi {
+  display: none; }
+
+.sino-menu.sino-menu-collapse .sino-submenu-title span {
+  display: none; }
+
+.sino-menu.sino-menu-collapse .sino-menu-item span {
+  display: none; }
+
+/*收起样式*/
+.sino-menu.sino-menu-collapse .sino-submenu .el-menu {
+  display: none; }
+
+.sino-menu-item .sino-submenu .sino-menu {
+  display: none; }
+
+.sino-menu-item.is-active .sino-submenu .sino-menu {
+  display: block; }
+
+.sino-menu.sino-menu-collapse + .app-main {
+  margin-left: 48px; }
+
+.sino-menu-collapse .sino-submenu {
+  position: relative; }
+
+.sino-menu-collapse .sino-submenu .sino-submenu-title span {
+  display: none; }
+
+.sino-menu-collapse .sino-submenu .sino-menu {
+  width: 178px;
+  position: fixed;
+  top: 70px;
+  left: 48px;
+  z-index: 222;
+  background: #f1f5f8;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 2px 1px 3px #dadcdd; }
+
+.sino-menu-collapse .sino-submenu .sino-menu:before {
+  display: none; }
+
+.sino-menu-collapse .sino-submenu .sino-menu .sino-menu-item span {
+  display: inline-block; }
+
+.sino-submenu .sino-menu .sino-menu-item.sino-sunmenu-title {
+  height: 36px;
+  border-bottom: 1px solid #9ccff8;
+  text-align: center;
+  margin: 8px 10px;
+  padding-left: 0 !important;
+  color: #399ff2;
+  font-size: 14px;
+  font-weight: bold;
+  display: none; }
+
+.sino-menu-collapse .sino-submenu .sino-menu .sino-menu-item.sino-sunmenu-title {
+  display: block; }
+
+.sino-submenu.is-active .sino-submenu-title {
+  background: #dff3ff; }
+
+.sino-menu-item.is-active {
+  background: #f1f5f8; }
+
+.sino-submenu .spec-icon-shezhi {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  display: inline-block; }
+
+.sino-menu-item .spec-icon-shezhi {
+  position: absolute;
+  right: 0;
+  top: 2px; }
+
+.sino-menu.sino-menu-collapse .spec-icon-shezhi {
+  display: none; }
+
+/*# sourceMappingURL=sinomenu.css.map */

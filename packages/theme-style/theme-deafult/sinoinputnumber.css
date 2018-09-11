@@ -1,0 +1,83 @@
+.sino-input-number {
+  display: inline-block;
+  width: 160px;
+  position: relative; }
+
+.sino-input-number .sino-input {
+  display: block; }
+
+.sino-input-number .sino-input-inner {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 82px; }
+
+.sino-input-number.is-without-controls .sino-input-inner {
+  padding-right: 10px; }
+
+.sino-input-number.is-disabled .sino-input-number-decrease, .sino-input-number.is-disabled .sino-input-number-increase {
+  border-color: #d1dbe5;
+  color: #d1dbe5; }
+
+.sino-input-number.is-disabled .sino-input-number-decrease:hover, .sino-input-number.is-disabled .sino-input-number-increase:hover {
+  color: #d1dbe5;
+  cursor: not-allowed; }
+
+.sino-input-number-decrease, .sino-input-number-increase {
+  border-left: 1px solid #bfcbd9;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  top: 1px;
+  text-align: center;
+  color: #97a8be;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1; }
+
+.sino-input-number-decrease:hover, .sino-input-number-increase:hover {
+  color: #20a0ff; }
+
+.sino-input-number-decrease:hover:not(.is-disabled) ~ .sino-input .sino-input-inner:not(.is-disabled), .sino-input-number-increase:hover:not(.is-disabled) ~ .sino-input .sino-input-inner:not(.is-disabled) {
+  border-color: #20a0ff; }
+
+.sino-input-number-decrease.is-disabled, .sino-input-number-increase.is-disabled {
+  color: #d1dbe5;
+  cursor: not-allowed; }
+
+.sino-input-number-increase {
+  right: 0; }
+
+.sino-input-number-decrease {
+  right: 23px;
+  line-height: 25px; }
+
+.sino-input-number-large {
+  width: 200px; }
+
+.sino-input-number-large .sino-input-number-decrease, .sino-input-number-large .sino-input-number-increase {
+  line-height: 42px;
+  width: 42px;
+  font-size: 16px; }
+
+.sino-input-number-large .sino-input-number-decrease {
+  right: 43px; }
+
+.sino-input-number-large .sino-input-inner {
+  padding-right: 94px; }
+
+.sino-input-number-small {
+  width: 130px; }
+
+.sino-input-number-small .sino-input-number-decrease, .sino-input-number-small .sino-input-number-increase {
+  line-height: 30px;
+  width: 30px;
+  font-size: 13px; }
+
+.sino-input-number-small .sino-input-number-decrease {
+  right: 31px; }
+
+.sino-input-number-small .sino-input-inner {
+  padding-right: 70px; }
+
+/*# sourceMappingURL=sinoinputnumber.css.map */

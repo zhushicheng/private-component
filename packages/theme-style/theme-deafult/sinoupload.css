@@ -1,0 +1,667 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.sino-upload-cover-title, .sino-upload-list-item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.sino-progress-bar-inner:after, .sino-upload-cover:after, .sino-upload-list-picture-card .sino-upload-list-item-actions:after {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle; }
+
+.sino-progress {
+  position: relative;
+  line-height: 1; }
+
+.sino-progress.is-exception .sino-progress-bar-inner {
+  background-color: #ff4949; }
+
+.sino-progress.is-exception .sino-progress-text {
+  color: #ff4949; }
+
+.sino-progress.is-success .sino-progress-bar-inner {
+  background-color: #13ce66; }
+
+.sino-progress.is-success .sino-progress-text {
+  color: #13ce66; }
+
+.sino-progress-text {
+  font-size: 14px;
+  color: #48576a;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 1; }
+
+.sino-progress-text i {
+  vertical-align: middle;
+  display: block; }
+
+.sino-progress-circle {
+  display: inline-block; }
+
+.sino-progress-circle .sino-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+.sino-progress-circle .sino-progress-text i {
+  vertical-align: middle;
+  display: inline-block; }
+
+.sino-progress-without-text .sino-progress-text {
+  display: none; }
+
+.sino-progress-without-text .sino-progress-bar {
+  padding-right: 0;
+  margin-right: 0;
+  display: block; }
+
+.sino-progress-text-inside .sino-progress-bar {
+  padding-right: 0;
+  margin-right: 0; }
+
+.sino-progress-bar {
+  padding-right: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin-right: -55px;
+  box-sizing: border-box; }
+
+.sino-progress-bar-outer {
+  height: 6px;
+  border-radius: 100px;
+  background-color: #e4e8f1;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle; }
+
+.sino-progress-bar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #20a0ff;
+  text-align: right;
+  border-radius: 100px;
+  line-height: 1; }
+
+.sino-progress-bar-innerText {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px; }
+
+@keyframes progress {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 32px 0; } }
+.sino-upload {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer; }
+
+.sino-upload iframe {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.sino-upload-input {
+  display: none; }
+
+.sino-upload-tip {
+  font-size: 12px;
+  color: #8391a5;
+  margin-top: 7px; }
+
+.sino-upload-picture-card {
+  background-color: #fbfdff;
+  border: 1px dashed #c0ccda;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  cursor: pointer;
+  line-height: 146px;
+  vertical-align: top; }
+
+.sino-upload-picture-card i {
+  font-size: 28px;
+  color: #8c939d; }
+
+.sino-upload-picture-card:hover {
+  border-color: #20a0ff;
+  color: #20a0ff; }
+
+.sino-upload-dragger {
+  background-color: #fff;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 180px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+
+.sino-upload-dragger .sino-upload-text {
+  color: #97a8be;
+  font-size: 14px;
+  text-align: center; }
+
+.sino-upload-dragger .sino-upload-text em {
+  color: #20a0ff;
+  font-style: normal; }
+
+.sino-upload-dragger .sino-icon-upload {
+  font-size: 67px;
+  color: #97a8be;
+  margin: 40px 0 16px;
+  line-height: 50px; }
+
+.sino-upload-dragger + .sino-upload-tip {
+  text-align: center; }
+
+.sino-upload-dragger ~ .sino-upload-files {
+  border-top: 1px solid rgba(191, 203, 217, 0.2);
+  margin-top: 7px;
+  padding-top: 5px; }
+
+.sino-upload-dragger:hover {
+  border-color: #20a0ff; }
+
+.sino-upload-dragger.is-dragover {
+  background-color: rgba(32, 159, 255, 0.06);
+  border: 2px dashed #20a0ff; }
+
+.sino-upload-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.sino-upload-list.is-disabled .sino-upload-list-item:hover .sino-upload-list-item-status-label {
+  display: block; }
+
+.sino-upload-list-item {
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  font-size: 14px;
+  color: #48576a;
+  line-height: 1.8;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  position: relative; }
+
+.sino-upload-list-item .sino-progress-bar {
+  margin-right: 0;
+  padding-right: 0; }
+
+.sino-upload-list-item .sino-progress {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  margin-left: 0; }
+
+.sino-upload-list-item .sino-progress-text {
+  position: absolute;
+  top: -13px;
+  right: 0; }
+
+.sino-upload-list-item:first-child {
+  margin-top: 8px; }
+
+.sino-upload-list-item .sino-icon-upload-success {
+  color: #13ce66; }
+
+.sino-upload-list-item .sino-icon-close {
+  display: none;
+  cursor: pointer;
+  opacity: .75;
+  color: #48576a;
+  -ms-transform: scale(0.7);
+  transform: scale(0.7); }
+
+.sino-upload-list-item .sino-icon-close:hover {
+  opacity: 1; }
+
+.sino-upload-list-item:hover {
+  background-color: #eef1f6; }
+
+.sino-upload-list-item:hover .sino-icon-close {
+  display: inline-block; }
+
+.sino-upload-list-item:hover .sino-progress-text {
+  display: none; }
+
+.sino-upload-list-item.is-success .sino-upload-list-item-status-label {
+  display: block; }
+
+.sino-upload-list-item.is-success .sino-upload-list-item-name:hover {
+  color: #20a0ff;
+  cursor: pointer; }
+
+.sino-upload-list-item-name {
+  color: #48576a;
+  width: 165px;
+  display: block;
+  margin-right: 15px;
+  padding-left: 4px;
+  transition: color .3s; }
+
+.sino-upload-list-item-name [class^=sino-icon] {
+  color: #97a8be;
+  margin-right: 7px;
+  height: 100%;
+  line-height: inherit; }
+
+.sino-upload-list-item-status-label {
+  line-height: 25px;
+  display: inline-block; }
+
+.sino-upload-list-item-delete {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 12px;
+  color: #48576a;
+  display: none; }
+
+.sino-upload-list-item-delete:hover {
+  color: #20a0ff; }
+
+.sino-upload-list-picture-card {
+  margin: 0;
+  display: inline;
+  vertical-align: top; }
+
+.sino-upload-list-picture-card .sino-upload-list-item {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #c0ccda;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  margin: 0 8px 8px 0;
+  display: inline-block; }
+
+.sino-upload-list-picture-card .sino-upload-list-item .sino-icon-check, .sino-upload-list-picture-card .sino-upload-list-item .sino-icon-circle-check {
+  color: #fff; }
+
+.sino-upload-list-picture-card .sino-upload-list-item .sino-icon-close, .sino-upload-list-picture-card .sino-upload-list-item:hover .sino-upload-list-item-status-label {
+  display: none; }
+
+.sino-upload-list-picture-card .sino-upload-list-item:hover .sino-progress-text {
+  display: block; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-name {
+  display: none; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-thumbnail {
+  width: 100%;
+  height: 100%; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-status-label {
+  position: absolute;
+  right: -15px;
+  top: -6px;
+  width: 40px;
+  height: 24px;
+  background: #13ce66;
+  text-align: center;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 0 1pc 1px rgba(0, 0, 0, 0.2); }
+
+.sino-upload-list-picture-card .sino-upload-list-item-status-label i {
+  font-size: 12px;
+  margin-top: 11px;
+  -ms-transform: rotate(-45deg) scale(0.8);
+  transform: rotate(-45deg) scale(0.8); }
+
+.sino-upload-list-picture-card .sino-upload-list-item-actions {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: default;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity .3s; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-actions span {
+  display: none;
+  cursor: pointer; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-actions span + span {
+  margin-left: 15px; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-actions .sino-upload-list-item-delete {
+  position: static;
+  font-size: inherit;
+  color: inherit; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-actions:hover {
+  opacity: 1; }
+
+.sino-upload-list-picture-card .sino-upload-list-item-actions:hover span {
+  display: inline-block; }
+
+.sino-upload-list-picture-card .sino-progress {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  bottom: auto;
+  width: 126px; }
+
+.sino-upload-list-picture-card .sino-progress .sino-progress-text {
+  top: 50%; }
+
+.sino-upload-list-picture .sino-upload-list-item {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #c0ccda;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px 10px 10px 90px;
+  height: 92px; }
+
+.sino-upload-list-picture .sino-upload-list-item .sino-icon-check, .sino-upload-list-picture .sino-upload-list-item .sino-icon-circle-check {
+  color: #fff; }
+
+.sino-upload-list-picture .sino-upload-list-item:hover .sino-upload-list-item-status-label {
+  background: 0 0;
+  box-shadow: none;
+  top: -2px;
+  right: -12px; }
+
+.sino-upload-list-picture .sino-upload-list-item:hover .sino-progress-text {
+  display: block; }
+
+.sino-upload-list-picture .sino-upload-list-item.is-success .sino-upload-list-item-name {
+  line-height: 70px;
+  margin-top: 0; }
+
+.sino-upload-list-picture .sino-upload-list-item.is-success .sino-upload-list-item-name i {
+  display: none; }
+
+.sino-upload-list-picture .sino-upload-list-item-thumbnail {
+  vertical-align: middle;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin-left: -80px; }
+
+.sino-upload-list-picture .sino-upload-list-item-name {
+  display: inline-block;
+  margin-top: 20px; }
+
+.sino-upload-list-picture .sino-upload-list-item-name i {
+  font-size: 70px;
+  line-height: 1;
+  position: absolute;
+  left: 9px;
+  top: 10px; }
+
+.sino-upload-list-picture .sino-upload-list-item-status-label {
+  position: absolute;
+  right: -17px;
+  top: -7px;
+  width: 46px;
+  height: 26px;
+  background: #13ce66;
+  text-align: center;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 1px 1px #ccc; }
+
+.sino-upload-list-picture .sino-upload-list-item-status-label i {
+  font-size: 12px;
+  margin-top: 12px;
+  -ms-transform: rotate(-45deg) scale(0.8);
+  transform: rotate(-45deg) scale(0.8); }
+
+.sino-upload-list-picture .sino-progress {
+  position: relative;
+  top: -7px; }
+
+.sino-upload-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10;
+  cursor: default; }
+
+.sino-upload-cover img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.sino-upload-cover + .sino-upload-inner {
+  opacity: 0;
+  position: relative;
+  z-index: 1; }
+
+.sino-upload-cover-label {
+  position: absolute;
+  right: -15px;
+  top: -6px;
+  width: 40px;
+  height: 24px;
+  background: #13ce66;
+  text-align: center;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 0 1pc 1px rgba(0, 0, 0, 0.2); }
+
+.sino-upload-cover-label i {
+  font-size: 12px;
+  margin-top: 11px;
+  -ms-transform: rotate(-45deg) scale(0.8);
+  transform: rotate(-45deg) scale(0.8);
+  color: #fff; }
+
+.sino-upload-cover-progress {
+  display: inline-block;
+  vertical-align: middle;
+  position: static;
+  width: 243px; }
+
+.sino-upload-cover-progress + .sino-upload-inner {
+  opacity: 0; }
+
+.sino-upload-cover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.sino-upload-cover-interact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.72);
+  text-align: center; }
+
+.sino-upload-cover-interact .btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0.1s, opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0.1s;
+  margin-top: 60px; }
+
+.sino-upload-cover-interact .btn span {
+  opacity: 0;
+  transition: opacity .15s linear; }
+
+.sino-upload-cover-interact .btn:not(:first-child) {
+  margin-left: 35px; }
+
+.sino-upload-cover-interact .btn:hover {
+  -ms-transform: translateY(-13px);
+  transform: translateY(-13px); }
+
+.sino-upload-cover-interact .btn:hover span {
+  opacity: 1; }
+
+.sino-upload-cover-interact .btn i {
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  line-height: inherit;
+  margin: 0 auto 5px; }
+
+.sino-upload-cover-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 36px;
+  width: 100%;
+  font-weight: 400;
+  text-align: left;
+  padding: 0 10px;
+  margin: 0;
+  line-height: 36px;
+  font-size: 14px;
+  color: #48576a; }
+
+.uploadFileBox {
+  float: left;
+  padding: 0 5px;
+  width: 148px;
+  height: 23px;
+  line-height: 23px;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  border-right: none;
+  color: #333; }
+
+.chooseFileButton {
+  width: 60px;
+  height: 23px;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  text-align: center;
+  background: #fff;
+  color: #399ff2;
+  font-size: 14px;
+  line-height: 23px;
+  display: inline-block; }
+
+.submitButton {
+  width: 71px;
+  height: 25px;
+  border: 1px solid #f6b412;
+  border-radius: 2px;
+  background: #fff;
+  text-align: center;
+  line-height: 23px;
+  color: #f6b412;
+  margin-left: 6px; }
+
+.sino-upload-list-item.is-success .icon-dui {
+  color: #13ce66; }
+
+.sino-upload-list-item-name {
+  font-size: 14px;
+  color: #666;
+  display: inline-block; }
+
+.sino-upload-list-item-name .icon-qubiezhen {
+  margin-right: 6px;
+  font-size: 12px; }
+
+.sino-upload-list-item.is-success .sino-upload-list-item-status-label {
+  display: inline-block;
+  cursor: pointer; }
+
+.sino-upload-list-item {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px; }
+
+.sino-upload-list-item:hover {
+  background-color: #fff;
+  color: #666; }
+
+.sino-upload-list-item-status-label {
+  display: none;
+  position: relative;
+  top: -6px;
+  color: #399ff2; }
+
+.sino-upload-list-item.is-success .sino-upload-list-item-status-label {
+  display: inline-block; }
+
+.sino-upload-list-item.is-success:hover .sino-upload-list-item-status-label {
+  display: inline-block;
+  color: #399ff2;
+  position: relative;
+  top: -6px; }
+
+.sino-upload-list-item.is-success .sino-upload-list-item-name:hover {
+  color: #666; }
+
+.sino-upload-list-item-input-name {
+  width: 100%;
+  color: #333;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/*# sourceMappingURL=sinoupload.css.map */

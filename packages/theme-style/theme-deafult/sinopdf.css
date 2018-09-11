@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/*主色用于菜单的选中状态、翻页选中状态、单选框及复选框*/
+/*主色用于部分图标*/
+/*辅色用于消息提醒及日历控件和部分图标-badge*/
+/*辅色用于按钮颜色*/
+/*按钮滑上样式*/
+/*辅色用于错误提示及必填项提示*/
+/*辅色用于表格底色*/
+/*头部颜色*/
+/*菜单颜色*/
+/*弹层-叹号边框*/
+/*弹层对勾边框*/
+/*弹层错误边框*/
+/*弹层服务器繁忙边框*/
+/*禁用背景颜色*/
+/*禁用字体颜色*/
+/*边框颜色*/
+/*badge边框颜色*/
+/*一级标题的下边框线*/
+/*二级标题的下边框线*/
+/*二级标题背景颜色*/
+/*表格表头颜色*/
+/*表格隔行变色*/
+.cpdf {
+  /* position: fixed;
+   top: 0;
+   left: 0;*/
+  /*background-color: rgba(0, 0, 0, .5);*/
+  width: 100%;
+  height: 100%;
+  /*z-index: 99999;*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/ }
+
+.fl {
+  float: left; }
+
+.cpdf .btn {
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  color: #bebec0;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  line-height: 33px; }
+
+.cpdf .prev {
+  margin-left: 25px; }
+
+.cpdf .btn span {
+  text-shadow: 0 1px 2px #454c69; }
+
+.cpdf .center {
+  text-align: center;
+  height: 94%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 14px #ccc;
+  position: fixed;
+  top: 2%;
+  right: 20px;
+  z-index: 999;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 40%; }
+
+.cpdf .center .contor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 33px;
+  background: #646a81;
+  border-bottom: 1px solid #585e75; }
+
+.contor .page {
+  font-size: 12px;
+  color: #bebec0;
+  margin: 7px 15px;
+  height: 18px; }
+
+.contor .page .pagenum {
+  width: 28px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #bebec0;
+  text-align: center;
+  line-height: 28px;
+  background: none;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer; }
+
+.contor .page .pagecount {
+  background: none;
+  width: 28px;
+  height: 18px;
+  text-align: left;
+  line-height: 28px;
+  color: #bebec0;
+  font-size: 12px;
+  cursor: pointer; }
+
+.cpdf .minus {
+  font-size: 30px;
+  text-shadow: 0 2px 0 #454c69;
+  background: none;
+  color: #bebec0;
+  cursor: pointer; }
+
+.cpdf .addscale {
+  font-size: 26px;
+  margin-right: 25px;
+  text-shadow: 0 2px 0 #454c69;
+  margin-left: 15px;
+  background: none;
+  color: #bebec0;
+  cursor: pointer; }
+
+.cpdf .sino-title {
+  user-select: none;
+  cursor: move; }
+
+.cpdf .sino-title button {
+  float: right;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  height: 100%; }
+
+.cpdf .sino-title .sino-guanbi {
+  color: #399ff2;
+  line-height: 41px;
+  font-size: 16px; }
+
+.cpdf .pdf-con {
+  max-height: 89%;
+  overflow: auto;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  height: 88%; }
+
+/*# sourceMappingURL=sinopdf.css.map */
